@@ -1,10 +1,10 @@
-#!name=百度网盘净化（去广告 / 去开屏 / 隐藏VIP引导）
-#!desc=净化 Baidu Netdisk，包括去广告、去活动弹窗、隐藏VIP引导。不涉及VIP破解功能。
+#!name=百度网盘净化去开屏
+#!desc=净化 Baidu Netdisk，去开屏
 #!author=Vesper
 
 [rewrite_local]
-^https?:\/\/pan\.baidu\.com\/rest\/\d+\.\d+\/.+ url script-response-body https://raw.githubusercontent.com/Vesperlin/Quanxtumult-Conf/refs/heads/main/rewrite/baidu_pan_clean.js
-^https?:\/\/pan\.baidu\.com\/(disk\/home|disk\/main|s\/|share\/init|share\/link).+ url script-response-body https://raw.githubusercontent.com/Vesperlin/Quanxtumult-Conf/refs/heads/main/rewrite/baidu_pan_clean.js
+# 百度网盘 – 开屏广告
+^https?:\/\/pan\.baidu\.com\/api\/getsyscfg url reject-200
 
 [mitm]
 hostname = pan.baidu.com
