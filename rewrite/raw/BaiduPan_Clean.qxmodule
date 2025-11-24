@@ -3,8 +3,8 @@
 #!author=Vesper
 
 [rewrite_local]
-^https?:\/\/pan\.baidu\.com\/rest\/\d+\.\d+\/.+ url script-response-body https://raw.githubusercontent.com/你的用户名/你的仓库/main/scripts/baidu_pan_clean.js
-^https?:\/\/pan\.baidu\.com\/(disk\/home|disk\/main|s\/|share\/init|share\/link).+ url script-response-body https://raw.githubusercontent.com/你的用户名/你的仓库/main/scripts/baidu_pan_clean.js
+^https?:\/\/pan\.baidu\.com\/rest\/\d+\.\d+\/.+ url script-response-body https://raw.githubusercontent.com/Vesperlin/Quanxtumult-Conf/refs/heads/main/rewrite/baidu_pan_clean.js
+^https?:\/\/pan\.baidu\.com\/(disk\/home|disk\/main|s\/|share\/init|share\/link).+ url script-response-body https://raw.githubusercontent.com/Vesperlin/Quanxtumult-Conf/refs/heads/main/rewrite/baidu_pan_clean.js
 
 [mitm]
 hostname = pan.baidu.com
