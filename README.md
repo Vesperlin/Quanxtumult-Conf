@@ -1,0 +1,1 @@
+# Quanxtumult-Conf
