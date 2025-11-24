@@ -5,6 +5,9 @@
 [rewrite_local]
 # 百度网盘 – 开屏广告
 ^https?:\/\/pan\.baidu\.com\/api\/getsyscfg url reject-200
+^https?:\/\/afd\.baidu\.com\/afd\/entry url reject-200
+^https?:\/\/eclick\.baidu\.com\/.* url reject-200
+^https?:\/\/als\.baidu\.com\/.* url reject-200
 
 [mitm]
-hostname = pan.baidu.com
+hostname = pan.baidu.com, afd.baidu.com, eclick.baidu.com, als.baidu.com
