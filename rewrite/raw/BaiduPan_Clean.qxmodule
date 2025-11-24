@@ -1,6 +1,6 @@
 #!name=百度网盘净化去开屏
 #!desc=净化 Baidu Netdisk，去开屏
-#!author=Vesper
+#!author=Vesper 
 
 [rewrite_local]
 # 百度网盘 – 开屏广告
