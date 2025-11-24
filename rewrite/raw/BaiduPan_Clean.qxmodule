@@ -38,7 +38,10 @@
 ^https?:\/\/pan\.baidu\.com\/api\/diffall url script-response-body https://raw.githubusercontent.com/Vesperlin/Quanxtumult-Conf/refs/heads/main/rewrite/baidu_pan_clean.js
 # > H5 落地页兜底
 ^https?:\/\/(?:pan|afd|eclick|als)\.baidu\.com\/.+ url script-response-body https://raw.githubusercontent.com/Vesperlin/Quanxtumult-Conf/refs/heads/main/rewrite/baidu_pan_clean.js
-[mitm]
+# 百度网盘全广告脚本（开屏/运营/横幅）
+^https?:\/\/(pan|pop\.pcsnetwork\.netdisk)\.baidu\.com\/(api\/diffall|rest\/2\.0\/pcs\/adv|pop\/probe_v6_addr) url script-response-body https://raw.githubusercontent.com/Vesperlin/Quanxtumult-Conf/main/rewrite/baidu_pan_all_clean.js
+
+
 
 [mitm]
 hostname = pan.baidu.com, afd.baidu.com, pop.pcsnetwork.netdisk.baidu.com, eclick.baidu.com, als.baidu.com
