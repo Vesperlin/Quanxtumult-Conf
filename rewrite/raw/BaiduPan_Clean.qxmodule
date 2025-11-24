@@ -7,10 +7,14 @@
 [rewrite_local]
 # 百度网盘 H5 开屏广告补丁（只改含“跳转详情页或第三方应用”的页面）
 ^https?:\/\/(?:pan|afd|eclick|als)\.baidu\.com\/.+ url script-response-body https://raw.githubusercontent.com/Vesperlin/Quanxtumult-Conf/refs/heads/main/rewrite/baidu_pan_clean.js
+# 百度网盘 - 开屏广告 probe 接口
+^https?:\/\/pop\.pcsnetwork\.netdisk\.baidu\.com\/pop\/probe_v6_addr url reject-200
+# 百度网盘 - 开屏 diffall 广告
+^https?:\/\/pan\.baidu\.com\/api\/diffall url reject-200
 ^https?:\/\/pan\.baidu\.com\/api\/getsyscfg url reject-200
 ^https?:\/\/afd\.baidu\.com\/afd\/entry url reject-200
 ^https?:\/\/eclick\.baidu\.com\/.* url reject-200
 ^https?:\/\/als\.baidu\.com\/.* url reject-200
-
+^https?:\/\/(?:pan|afd|eclick|als)\.baidu\.com\/.+ url reject-200
 [mitm]
-hostname = pan.baidu.com, afd.baidu.com, eclick.baidu.com, als.baidu.com
+hostname = pan.baidu.com, afd.baidu.com, pop.pcsnetwork.netdisk.baidu.com, eclick.baidu.com, als.baidu.com
